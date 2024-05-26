@@ -5,24 +5,24 @@
 Installing Python 3.10 on Ubuntu with apt is a relatively straightforward process and takes only a few minutes to complete.
 
 Update the packages list and install the prerequisites:
-``` Bash
+``` console
 sudo apt update && sudo apt upgrade -y
 sudo apt install software-properties-common
 ```
 
 Add the deadsnakes PPA to your system’s sources list:
-``` Bash
+``` console
 sudo add-apt-repository ppa:deadsnakes/ppa
 ```
 When prompted, press [Enter] to continue.
 
 Once the repository is enabled, you can install Python 3.9 by executing:
-``` Bash
+``` console
 sudo apt install python3.10
 ```
 
 Verify that the installation was successful by typing:
-``` Bash
+``` console
 python3.10 --version
 ```
 Output
@@ -31,12 +31,12 @@ Python 3.10.12
 ```
 
 Install pip3
-``` Bash
+``` console
 sudo apt install python3-pip
 ```
 
 Verify that the installation was successful by typing:
-``` Bash
+``` console
 pip3 --version
 ```
 Output
@@ -47,21 +47,21 @@ pip 24.0 from /home/<username>/.local/lib/python3.10/site-packages/pip (python 3
 ## Step 2 : Install Java
 
 Run the following command. After installation, we can check it by running
-``` Bash
+``` console
 java -version
 ```
 To run the PySpark application, you would need Java 8/11/17 or a later version.
-``` Bash
+``` console
 sudo apt install openjdk-8-jre-headless -y
 ```
 
 ## Step 3 : Install Apache Spark
-``` Bash
+``` console
 pip3 install pyspark==3.5
 ```
 
 ## Step 4 : Install the delta-spark package
-``` Bash
+``` console
 pip3 install delta-spark==3.2
 ```
 
